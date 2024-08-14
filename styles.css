@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.logo {
+    font-size: 24px; /* Adjust size as needed */
+    color: #FFFFFF; /* Initial color of the logo */
+    text-decoration: none; /* Remove underline if it's a link */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and size */
+}
+
+/* Logo Hover Effect */
+.logo:hover {
+    color: #ff6347; /* Change to the desired hover color */
+    transform: scale(0.99); /* Slightly enlarge the logo on hover */
+}
+
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+h1, h2, h3, h4, h5, h6 { /* Apply to all heading levels */
+    color: #333; /* Initial color of the heading */
+    transition: color 0.1s ease, transform 0.1s ease; /* Smooth transition for color and size */
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    color: #ff6347; /* Change to the desired hover color */
+    transform: scale(0.99); /* Slightly enlarge the heading on hover */
+}
+
+
+.menu-bar {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.menu-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.menu-bar ul li {
+    display: inline-block;
+    margin: 0 15px;
+    transition: all 0.3s ease; /* Smooth transition effect */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.menu-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect */
+.menu-bar ul li:hover {
+    background-color: #ff6347; /* Change background color on hover */
+    transform: scale(1.2); /* Enlarge the menu item on hover */
+}
+
+.menu-bar ul li:hover a {
+    color: #fff; /* Change text color on hover */
+}
+
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.content {
+    width: 70%;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 30%;
+    padding: 20px;
+    background-color: #ddd;
+}
+
+.comment-section {
+    padding: 20px;
+    padding-right: 8px; /* Specific padding on the right side */
+    background-color: #fff;
+    border: 3px double #32CD32; /* Parrot green double border */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 20px;
+    text-align: center; /* Center-aligns content within the section */
+    display: inline-block; /* Ensures the section only takes up as much space as needed */
+    float: centre; /* Aligns the comment section to the right side */
+    max-width: 400px; /* Optional: set a max-width for the section */
+}
+
+.comment-section form {
+    text-align: left; /* Aligns form elements to the left inside the centered section */
+    width: 100%; /* Ensures the form takes up the full width of the section */
+}
+
+.comment-section label {
+    display: block;
+    margin-top: 10px;
+}
+
+.comment-section input,
+.comment-section textarea {
+    width: 100%; /* Full width of the form */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Includes padding and border in width calculations */
+}
+
+.comment-section textarea {
+    height: auto; /* Allows textarea to grow with content */
+    resize: none; /* Prevents manual resizing */
+    min-height: 100px; /* Minimum height for the textarea */
+}
+
+.comment-section button {
+    margin-top: 15px; /* Space above the button */
+    padding: 10px 20px;
+    background-color: #32CD32; /* Parrot green color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Ensures the button is on its own line */
+    width: 100%; /* Full width of the form */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.comment-section button:hover {
+    background-color: #28a745; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
