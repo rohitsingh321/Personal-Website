@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjun Singh Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #000080;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #800000;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.semester-syllabus ul {
+    display: none;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+}
+
+.semester-syllabus ul.active {
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="#" class="logo">
+    <img src="logo.png"  class="logo-icon">
+    Arjun Singh Blog
+</a>
+    </header>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <img src="wallpaper.jpg" alt="Arjun Singh">
+    </div>
+
+    <!-- Menu Bar -->
+    <nav class="menu-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+
+             <li class="has-submenu">
+            <a href="#">Blog</a>
+            <ul class="submenu">
+                <li><a href="bict.html">BICT</a></li>
+                <li><a href="#">Submenu</a></li>
+            </ul>
+        </li>
+
+
+            <li><a href="portfoli">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="container">
+    <!-- Header Section -->
+    <header>
+        <h1>BICT Education - Tribhuvan University</h1>
+        <p>Details of the Bachelor in Information and Communication Technology (BICT) program offered by Tribhuvan University.</p>
+    </header>
+
+
+ 
+
+
+         <aside class="sidebar">
+        <!-- Search Box -->
+       <div class="search-container">
+            <input type="text" id="site-search" placeholder="Search...">
+            <button id="search-button">Search</button>
+        </div>
+        <!-- Other sidebar content here -->
+    
+    
+
+
+
+            <h2>About Me</h2>
+            <p>Short bio goes here...</p>
+            <h3>Recent Posts</h3>
+            <ul>
+                <li><a href="#">Post 1</a></li>
+                <li><a href="#">Post 2</a></li>
+                <li><a href="#">Post 3</a></li>
+            </ul>
+        </aside>
+    </div>
+
+
+
+    <!-- BICT Overview Section -->
+    <section id="bict-overview">
+        <h2>Overview of BICT Program</h2>
+        <p>The Bachelor in Information and Communication Technology (BICT) is a four-year program designed to equip students with the knowledge and skills needed to excel in the field of information technology and communication. The program covers a wide range of subjects including programming, networking, data science, and more.</p>
+    </section>
+
+    <!-- BICT Course Structure Section -->
+    <section id="bict-course-structure">
+        <h2>BICT Course Structure</h2>
+        <ul>
+            <li>First Year: Introduction to Programming, Mathematics, Basic Electronics, and more.</li>
+            <li>Second Year: Data Structures, Object-Oriented Programming, Database Systems, and more.</li>
+            <li>Third Year: Operating Systems, Networking, Web Development, and more.</li>
+            <li>Fourth Year: Artificial Intelligence, Mobile Computing, Project Work, and more.</li>
+        </ul>
+    </section>
+
+    <!-- BICT Syllabus Section -->
+    <section id="bict-syllabus">
+        <h2>BICT Syllabus - Semester Wise</h2>
+        <div class="semester-syllabus">
+            <h3>First Semester</h3>
+            <ul>
+                <li>Course 1: Introduction to Programming</li>
+                <li>Course 2: Mathematics I</li>
+                <li>Course 3: Basic Electronics</li>
+                <!-- Add more courses -->
+            </ul>
+        </div>
+        <div class="semester-syllabus">
+            <h3>Second Semester</h3>
+            <ul>
+                <li>Course 1: Data Structures</li>
+                <li>Course 2: Mathematics II</li>
+                <li>Course 3: Object-Oriented Programming</li>
+                <!-- Add more courses -->
+            </ul>
+        </div>
+        <!-- Repeat similar blocks for other semesters -->
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Tribhuvan University. All rights reserved.</p>
+    </footer>
+<script>
+    document.querySelectorAll('.semester-syllabus h3').forEach(function(header) {
+    header.addEventListener('click', function() {
+        this.nextElementSibling.classList.toggle('active');
+    });
+});
+
+
+</script>
+</body>
+</html>

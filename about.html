@@ -9,7 +9,10 @@
 <body>
     <!-- Header Section -->
     <header>
-        <div class="logo">Arjun Singh Blog</div>
+        <a href="#" class="logo">
+    <img src="logo.png"  class="logo-icon">
+    Arjun Singh Blog
+</a>
     </header>
 
     <!-- Banner Section -->
@@ -22,11 +25,54 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+
+             <li class="has-submenu">
+            <a href="#">Blog</a>
+            <ul class="submenu">
+                <li><a href="bict.html">BICT</a></li>
+                <li><a href="#">Submenu</a></li>
+            </ul>
+        </li>
+
+
+            <li><a href="portfoli">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- Main Content Area -->
+    <div class="container">
+        <main class="content">
+            <h1>Welcome to My Blog</h1>
+            <p>Your content goes here...</p>
+        </main>
+
+
+ 
+
+
+         <aside class="sidebar">
+        <!-- Search Box -->
+       <div class="search-container">
+            <input type="text" id="site-search" placeholder="Search...">
+            <button id="search-button">Search</button>
+        </div>
+        <!-- Other sidebar content here -->
+    
+    
+
+
+
+            <h2>About Me</h2>
+            <p>Short bio goes here...</p>
+            <h3>Recent Posts</h3>
+            <ul>
+                <li><a href="#">Post 1</a></li>
+                <li><a href="#">Post 2</a></li>
+                <li><a href="#">Post 3</a></li>
+            </ul>
+        </aside>
+    </div>
     <!-- Main Content Area -->
     <div class="about-container">
         <section class="bio-section">
@@ -62,6 +108,9 @@
             <p>If you'd like to connect with me, feel free to <a href="contact.html">contact me</a>. I'm always open to new opportunities, collaborations, or simply chatting about tech, blogging, or anything else.</p>
         </section>
     </div>
+    <!-- Back to Top Button -->
+<a href="#" class="back-to-top">Top</a>
+
 
     <!-- Footer Section -->
     <footer>
